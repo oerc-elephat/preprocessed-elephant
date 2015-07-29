@@ -1,0 +1,145 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix eeboo: <http://eeboo.oerc.ox.ac.uk/eeboo/> .
+@prefix bf: <http://bibframe.org/vocab/> .
+@prefix mads: <http://www.loc.gov/mads/rdf/v1#> .
+@prefix mods: <http://www.loc.gov/mods/v3#> .
+
+<http://eeboo.oerc.ox.ac.uk/eeboo>
+  a owl:Ontology .
+  
+# Classes 
+  
+eeboo:Person
+    a rdfs:Class ;
+    rdfs:label "Person" ;
+    owl:equivalentClass bf:Person ;
+    rdfs:comment "A human being" .
+
+eeboo:Work
+    a rdfs:Class ;
+    rdfs:label "Work" ;
+	owl:equivalentProperty bf:Instance ;
+    rdfs:comment "A physical thing, the metadata details of which are captured in an object record such as an EEBO xml-file" .
+
+eeboo:Surname
+    a rdfs:Class ;
+    rdfs:label  "Surname" ;
+    owl:equivalentClass mads:FamilyNameElement ;
+    rdfs:comment "Surname or Family name of a person, i.e. the name shared by members of the same family, e.g. Smith" .
+
+eeboo:Personal_Name
+    a rdfs:Class ;
+    rdfs:label  "FirstName" ;
+    owl:equivalentClass mads:GivenNameElement ;
+    rdfs:comment "Given, personal name of an individual person, usually the name they are referred to by friends and family, e.g. John" .
+
+
+#Properties
+eeboo:raw_pubplace
+  a rdf:Property, owl:DatatypeProperty ;
+  rdfs:domain eeboo:Work ;
+  rdfs:range xsd:string .
+
+eeboo:precise-birth
+  a rdf:Property, owl:DatatypeProperty ;
+  rdfs:comment "The birth date of a person when it has been recorded without ambiguity or uncertainty" ;
+  rdfs:domain eeboo:Person ;
+  rdfs:label  "precise-date-of-birth"^^xsd:string;
+  rdfs:range xsd:date .
+
+eeboo:precise-death
+    a rdf:Property, owl:DatatypeProperty ;
+    rdfs:comment "The date of death of a person when it has been recorded without ambiguity or uncertainty" ;
+    rdfs:domain eeboo:Person ;
+    rdfs:label  "precise-date-of-death"^^xsd:string;
+    rdfs:range xsd:date .
+	
+eeboo:approximate-birth
+    a rdf:Property, owl:DatatypeProperty ;
+    rdfs:comment "The birth date of a person when it has been recorded ambiguously or with a degree of uncertainty" ;
+    rdfs:domain eeboo:Person ;
+    rdfs:label  "approximate-date-of-birth"^^xsd:string;
+    rdfs:range xsd:date .
+  
+eeboo:approximate-death
+      a rdf:Property, owl:DatatypeProperty ;
+      rdfs:comment "The date of death of a person when it has been recorded ambiguously or with a degree of uncertainty" ;
+      rdfs:domain eeboo:Person ;
+      rdfs:label  "approximate-date-of-death"^^xsd:string;
+      rdfs:range xsd:date .
+	  
+eeboo:precise-floruit-start
+      a rdf:Property, owl:DatatypeProperty ;
+      rdfs:comment "The start date of a period of professional activity for a person when that time range has been recorded without ambiguity or uncertainty" ;
+      rdfs:domain eeboo:Person ;
+      rdfs:label  "precise-floruit-start"^^xsd:string;
+      rdfs:range xsd:date .
+	  
+eeboo:precise-floruit-end
+      a rdf:Property, owl:DatatypeProperty ;
+      rdfs:comment "The end date of a period of professional activity for a person when that time range has been recorded without ambiguity or uncertainty" ;
+      rdfs:domain eeboo:Person ;
+      rdfs:label  "precise-floruit-end"^^xsd:string;
+      rdfs:range xsd:date .
+	  
+eeboo:precise-publication
+    a rdf:Property, owl:DatatypeProperty ;
+    rdfs:comment "The publication date of a work when it has been recorded without ambiguity or uncertainty" ;
+    rdfs:domain eeboo:Work ;
+    rdfs:label  "precise-publication"^^xsd:string;
+    rdfs:range xsd:date .
+  
+eeboo:approx-publication
+    a rdf:Property, owl:DatatypeProperty ;
+    rdfs:comment "The approximate publication date of a work i.e. when it has been recorded with ambiguity or uncertainty" ;
+    rdfs:domain eeboo:Work ;
+    rdfs:label  "precise-publication"^^xsd:string;
+    rdfs:range xsd:date .
+
+eeboo:surname
+  a rdf:Property ;
+  rdfs:domain eeboo:Person ;
+  rdfs:label  "has_surname" ;
+  rdfs:range eeboo:Surname .
+
+eeboo:given_name
+  a rdf:Property ;
+  rdfs:domain eeboo:Person ;
+  rdfs:label  "has_personal_name" ;
+  rdfs:range eeboo:Personal_Name .
+
+eeboo:creator
+    a rdf:Property ;
+    rdfs:domain eeboo:Work ;
+    rdfs:label  "has_creator" ;
+    owl:equivalentProperty dc:creator ;
+    rdfs:range eeboo:Person .
+	
+eeboo:electronicLocation
+	a rdf:Property ;
+	rdfs:domain eeboo:Work ;
+	rdfs:label  "electronic_representation_of_resource" ;
+	rdfs:range xsd:string .
+
+eeboo:hasExternalAuthorityVIAF
+	a rdf:Property ;
+	rdfs:domain eeboo:Person ;
+	rdf:subPropertyOf mads:hasExactExternalAuthority ;
+	rdfs:label  "Records the uri of the exact match entitity from VIAF" ;
+	rdfs:range xsd:string .
+
+eeboo:hasExternalAuthorityLoC
+	a rdf:Property ;
+	rdfs:domain eeboo:Person ;
+	rdf:subPropertyOf mads:hasExactExternalAuthority ;
+	rdfs:label  "Records the uri of the exact match entitity from Library of Congress" ;
+	rdfs:range xsd:string .
+	
+	
+	
+
+
