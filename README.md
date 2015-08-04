@@ -3,3 +3,6 @@ eeboo-ontology.ttl: An ontology in .ttl to map the classes and properties of tho
 metadata-subset.py: Used to pull out a small number of specific metadata entities from the XML files for EEBO (Early English Books Online)  phase1 XML records, such as author, publication place, publication year, title, and id numbers.
 regex-author-year: regex used to tidy up and sort the dates as associated with the authors e.g. date of birth.
 regex-publication-date: regex used to tidy up and sort publication dates for works.
+
+We used the Karma Data Integration Tool to generated the RDF triples using various ontologies for bibliographic metadata. Karma is available from https://github.com/usc-isi-i2/Web-Karma/wiki/Installation.
+We also used the MODS/RDF and MADS/RDF ontologies, available respectively from http://www.loc.gov/standards/mods/modsrdf/ and http://www.loc.gov/standards/mads/rdf/ .
