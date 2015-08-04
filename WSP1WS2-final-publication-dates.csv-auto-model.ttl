@@ -1,0 +1,289 @@
+@prefix mads: <http://www.loc.gov/mads/rdf/v1#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix bf: <http://bibframe.org/vocab/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix karma: <http://isi.edu/integration/karma/ontologies/model/current#> .
+@prefix mods: <http://www.loc.gov/mods/v3#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix eeboo: <http://eeboo.oerc.ox.ac.uk/eeboo/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix km-dev: <http://isi.edu/integration/karma/dev#> .
+
+_:node19gajvepkx1 a km-dev:R2RMLMapping ;
+	km-dev:sourceName "final_publication_dates.csv" ;
+	km-dev:modelPublicationTime "1426285640500"^^xsd:long ;
+	km-dev:modelVersion "1.7" ;
+	km-dev:hasModelLabel "final_publication_dates.csv" ;
+	km-dev:hasBaseURI "http://eeboo.oerc.ox.ac.uk/eeboo/" ;
+	km-dev:hasWorksheetHistory """[
+    {
+        \"commandName\": \"SetMetaPropertyCommand\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"Work_uri\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"metaPropertyName\",
+                \"type\": \"other\",
+                \"value\": \"isUriOfClass\"
+            },
+            {
+                \"name\": \"metaPropertyUri\",
+                \"type\": \"other\",
+                \"value\": \"http://eeboo.oerc.ox.ac.uk/eeboo/Work\"
+            },
+            {
+                \"name\": \"metaPropertyId\",
+                \"type\": \"other\",
+                \"value\": \"http://eeboo.oerc.ox.ac.uk/eeboo/Work1 (add)\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://eeboo.oerc.ox.ac.uk/eeboo/Work\",
+                    \"DomainId\": \"http://eeboo.oerc.ox.ac.uk/eeboo/Work1 (add)\",
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://isi.edu/integration/karma/dev#classLink\",
+                    \"DomainLabel\": \"eeboo:Work1 (add)\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": false
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Work_uri\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Work_uri\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"Modeling\"]
+    },
+    {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"XSD-precise-date\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://eeboo.oerc.ox.ac.uk/eeboo/Work\",
+                    \"DomainId\": \"http://eeboo.oerc.ox.ac.uk/eeboo/Work1\",
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://eeboo.oerc.ox.ac.uk/eeboo/precise-publication\",
+                    \"DomainLabel\": \"eeboo:Work1\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": false
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"xsd:date\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"XSD-precise-date\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"XSD-precise-date\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"Modeling\"]
+    },
+    {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"XSD-approx-date\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://eeboo.oerc.ox.ac.uk/eeboo/Work\",
+                    \"DomainId\": \"http://eeboo.oerc.ox.ac.uk/eeboo/Work1\",
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://eeboo.oerc.ox.ac.uk/eeboo/approx-publication\",
+                    \"DomainLabel\": \"eeboo:Work1\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": false
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"xsd:date\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"XSD-approx-date\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"XSD-approx-date\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"Modeling\"]
+    },
+    {
+        \"commandName\": \"SetWorksheetPropertiesCommand\",
+        \"inputParameters\": [
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"properties\",
+                \"type\": \"other\",
+                \"value\": {
+                    \"graphLabel\": \"\",
+                    \"hasBaseURI\": true,
+                    \"baseURI\": \"http://eeboo.oerc.ox.ac.uk/eeboo/\",
+                    \"hasPrefix\": false,
+                    \"hasServiceProperties\": false
+                }
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            }
+        ],
+        \"tags\": [\"Modeling\"]
+    }
+]""" .
+
+km-dev:TriplesMap_c0e24454-5a71-4222-a4cb-c23697f0b61e a rr:TriplesMap .
+
+_:node19gajvepkx1 km-dev:hasTriplesMap km-dev:TriplesMap_c0e24454-5a71-4222-a4cb-c23697f0b61e .
+
+km-dev:TriplesMap_c0e24454-5a71-4222-a4cb-c23697f0b61e km-dev:isPartOfMapping _:node19gajvepkx1 .
+
+_:node19gajvepkx2 rr:tableName "final_publication_dates.csv" ;
+	a rr:LogicalTable ;
+	km-dev:isPartOfMapping _:node19gajvepkx1 .
+
+_:node19gajvepkx1 km-dev:hasLogicalTable _:node19gajvepkx2 .
+
+km-dev:TriplesMap_c0e24454-5a71-4222-a4cb-c23697f0b61e rr:logicalTable _:node19gajvepkx2 ;
+	rr:subjectMap _:node19gajvepkx3 .
+
+_:node19gajvepkx1 km-dev:hasSubjectMap _:node19gajvepkx3 .
+
+_:node19gajvepkx3 km-dev:isPartOfMapping _:node19gajvepkx1 ;
+	a rr:SubjectMap ;
+	km-dev:alignmentNodeId "http://eeboo.oerc.ox.ac.uk/eeboo/Work1" ;
+	rr:class eeboo:Work ;
+	rr:template "{Work_uri}" ;
+	a km-dev:steinerTreeRootNode .
+
+km-dev:PredicateObjectMap_7e20ac36-85f6-43c6-8de6-64a3cc00c128 rr:predicate eeboo:approx-publication .
+
+_:node19gajvepkx4 rr:column "XSD-approx-date" ;
+	a rr:ObjectMap ;
+	rr:datatype "http://www.w3.org/2001/XMLSchema#date" ;
+	km-dev:isPartOfMapping _:node19gajvepkx1 .
+
+_:node19gajvepkx1 km-dev:hasObjectMap _:node19gajvepkx4 .
+
+km-dev:PredicateObjectMap_7e20ac36-85f6-43c6-8de6-64a3cc00c128 rr:objectMap _:node19gajvepkx4 .
+
+km-dev:TriplesMap_c0e24454-5a71-4222-a4cb-c23697f0b61e rr:predicateObjectMap km-dev:PredicateObjectMap_7e20ac36-85f6-43c6-8de6-64a3cc00c128 .
+
+km-dev:PredicateObjectMap_7e20ac36-85f6-43c6-8de6-64a3cc00c128 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node19gajvepkx1 .
+
+_:node19gajvepkx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_7e20ac36-85f6-43c6-8de6-64a3cc00c128 .
+
+km-dev:PredicateObjectMap_b0b75cd5-c045-4285-a615-48b0df1793ad rr:predicate eeboo:precise-publication .
+
+_:node19gajvepkx5 rr:column "XSD-precise-date" ;
+	a rr:ObjectMap ;
+	rr:datatype "http://www.w3.org/2001/XMLSchema#date" ;
+	km-dev:isPartOfMapping _:node19gajvepkx1 .
+
+_:node19gajvepkx1 km-dev:hasObjectMap _:node19gajvepkx5 .
+
+km-dev:PredicateObjectMap_b0b75cd5-c045-4285-a615-48b0df1793ad rr:objectMap _:node19gajvepkx5 .
+
+km-dev:TriplesMap_c0e24454-5a71-4222-a4cb-c23697f0b61e rr:predicateObjectMap km-dev:PredicateObjectMap_b0b75cd5-c045-4285-a615-48b0df1793ad .
+
+km-dev:PredicateObjectMap_b0b75cd5-c045-4285-a615-48b0df1793ad a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node19gajvepkx1 .
+
+_:node19gajvepkx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_b0b75cd5-c045-4285-a615-48b0df1793ad .

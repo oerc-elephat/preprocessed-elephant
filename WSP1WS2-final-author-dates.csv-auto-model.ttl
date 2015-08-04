@@ -1,0 +1,569 @@
+@prefix mads: <http://www.loc.gov/mads/rdf/v1#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix bf: <http://bibframe.org/vocab/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix karma: <http://isi.edu/integration/karma/ontologies/model/current#> .
+@prefix mods: <http://www.loc.gov/mods/v3#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix eeboo: <http://eeboo.oerc.ox.ac.uk/eeboo/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix km-dev: <http://isi.edu/integration/karma/dev#> .
+
+_:node19gakslfox1 a km-dev:R2RMLMapping ;
+	km-dev:sourceName "final_author_dates.csv" ;
+	km-dev:modelPublicationTime "1426286597624"^^xsd:long ;
+	km-dev:modelVersion "1.7" ;
+	km-dev:hasModelLabel "final_author_dates.csv" ;
+	km-dev:hasBaseURI "http://eeboo.oerc.ox.ac.uk/eeboo/" ;
+	km-dev:hasWorksheetHistory """[
+    {
+        \"commandName\": \"SetMetaPropertyCommand\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"FullNameElement_URI\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"metaPropertyName\",
+                \"type\": \"other\",
+                \"value\": \"isUriOfClass\"
+            },
+            {
+                \"name\": \"metaPropertyUri\",
+                \"type\": \"other\",
+                \"value\": \"http://eeboo.oerc.ox.ac.uk/eeboo/Person\"
+            },
+            {
+                \"name\": \"metaPropertyId\",
+                \"type\": \"other\",
+                \"value\": \"http://eeboo.oerc.ox.ac.uk/eeboo/Person1 (add)\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://eeboo.oerc.ox.ac.uk/eeboo/Person\",
+                    \"DomainId\": \"http://eeboo.oerc.ox.ac.uk/eeboo/Person1 (add)\",
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://isi.edu/integration/karma/dev#classLink\",
+                    \"DomainLabel\": \"eeboo:Person1 (add)\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": false
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"FullNameElement_URI\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"FullNameElement_URI\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"Modeling\"]
+    },
+    {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"precise-birth-XSD\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://eeboo.oerc.ox.ac.uk/eeboo/Person\",
+                    \"DomainId\": \"http://eeboo.oerc.ox.ac.uk/eeboo/Person1\",
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://eeboo.oerc.ox.ac.uk/eeboo/precise-birth\",
+                    \"DomainLabel\": \"eeboo:Person1\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": false
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"xsd:date\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"precise-birth-XSD\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"precise-birth-XSD\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"Modeling\"]
+    },
+    {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"precise-death-XSD\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://eeboo.oerc.ox.ac.uk/eeboo/Person\",
+                    \"DomainId\": \"http://eeboo.oerc.ox.ac.uk/eeboo/Person1\",
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://eeboo.oerc.ox.ac.uk/eeboo/precise-death\",
+                    \"DomainLabel\": \"eeboo:Person1\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": false
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"xsd:date\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"precise-death-XSD\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"precise-death-XSD\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"Modeling\"]
+    },
+    {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"approximate-birth-XSD\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://eeboo.oerc.ox.ac.uk/eeboo/Person\",
+                    \"DomainId\": \"http://eeboo.oerc.ox.ac.uk/eeboo/Person1\",
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://eeboo.oerc.ox.ac.uk/eeboo/approximate-birth\",
+                    \"DomainLabel\": \"eeboo:Person1\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": false
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"xsd:date\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"approximate-birth-XSD\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"approximate-birth-XSD\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"Modeling\"]
+    },
+    {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"approximate-death-XSD\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://eeboo.oerc.ox.ac.uk/eeboo/Person\",
+                    \"DomainId\": \"http://eeboo.oerc.ox.ac.uk/eeboo/Person1\",
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://eeboo.oerc.ox.ac.uk/eeboo/approximate-death\",
+                    \"DomainLabel\": \"eeboo:Person1\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": false
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"xsd:date\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"approximate-death-XSD\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"approximate-death-XSD\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"Modeling\"]
+    },
+    {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"precise-floruit-from-XSD\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://eeboo.oerc.ox.ac.uk/eeboo/Person\",
+                    \"DomainId\": \"http://eeboo.oerc.ox.ac.uk/eeboo/Person1\",
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://eeboo.oerc.ox.ac.uk/eeboo/precise-floruit-start\",
+                    \"DomainLabel\": \"eeboo:Person1\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": false
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"xsd:date\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"precise-floruit-from-XSD\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"precise-floruit-from-XSD\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"Modeling\"]
+    },
+    {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"precise-floruit-to-XSD\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://eeboo.oerc.ox.ac.uk/eeboo/Person\",
+                    \"DomainId\": \"http://eeboo.oerc.ox.ac.uk/eeboo/Person1\",
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://eeboo.oerc.ox.ac.uk/eeboo/precise-floruit-end\",
+                    \"DomainLabel\": \"eeboo:Person1\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": false
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"xsd:date\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"precise-floruit-to-XSD\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"precise-floruit-to-XSD\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"Modeling\"]
+    },
+    {
+        \"commandName\": \"SetWorksheetPropertiesCommand\",
+        \"inputParameters\": [
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"properties\",
+                \"type\": \"other\",
+                \"value\": {
+                    \"graphLabel\": \"\",
+                    \"hasBaseURI\": true,
+                    \"baseURI\": \"http://eeboo.oerc.ox.ac.uk/eeboo/\",
+                    \"hasPrefix\": false,
+                    \"hasServiceProperties\": false
+                }
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            }
+        ],
+        \"tags\": [\"Modeling\"]
+    }
+]""" .
+
+km-dev:TriplesMap_639f3772-2335-427d-9907-290481548a0f a rr:TriplesMap .
+
+_:node19gakslfox1 km-dev:hasTriplesMap km-dev:TriplesMap_639f3772-2335-427d-9907-290481548a0f .
+
+km-dev:TriplesMap_639f3772-2335-427d-9907-290481548a0f km-dev:isPartOfMapping _:node19gakslfox1 .
+
+_:node19gakslfox2 rr:tableName "final_author_dates.csv" ;
+	a rr:LogicalTable ;
+	km-dev:isPartOfMapping _:node19gakslfox1 .
+
+_:node19gakslfox1 km-dev:hasLogicalTable _:node19gakslfox2 .
+
+km-dev:TriplesMap_639f3772-2335-427d-9907-290481548a0f rr:logicalTable _:node19gakslfox2 ;
+	rr:subjectMap _:node19gakslfox3 .
+
+_:node19gakslfox1 km-dev:hasSubjectMap _:node19gakslfox3 .
+
+_:node19gakslfox3 km-dev:isPartOfMapping _:node19gakslfox1 ;
+	a rr:SubjectMap ;
+	km-dev:alignmentNodeId "http://eeboo.oerc.ox.ac.uk/eeboo/Person1" ;
+	rr:class eeboo:Person ;
+	rr:template "{FullNameElement_URI}" ;
+	a km-dev:steinerTreeRootNode .
+
+km-dev:PredicateObjectMap_491cfcab-ffe3-4854-9294-d2c5bdae0962 rr:predicate eeboo:approximate-birth .
+
+_:node19gakslfox4 rr:column "approximate-birth-XSD" ;
+	a rr:ObjectMap ;
+	rr:datatype "http://www.w3.org/2001/XMLSchema#date" ;
+	km-dev:isPartOfMapping _:node19gakslfox1 .
+
+_:node19gakslfox1 km-dev:hasObjectMap _:node19gakslfox4 .
+
+km-dev:PredicateObjectMap_491cfcab-ffe3-4854-9294-d2c5bdae0962 rr:objectMap _:node19gakslfox4 .
+
+km-dev:TriplesMap_639f3772-2335-427d-9907-290481548a0f rr:predicateObjectMap km-dev:PredicateObjectMap_491cfcab-ffe3-4854-9294-d2c5bdae0962 .
+
+km-dev:PredicateObjectMap_491cfcab-ffe3-4854-9294-d2c5bdae0962 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node19gakslfox1 .
+
+_:node19gakslfox1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_491cfcab-ffe3-4854-9294-d2c5bdae0962 .
+
+km-dev:PredicateObjectMap_fa3806e9-d283-4651-ae02-8aad0f42f7f4 rr:predicate eeboo:approximate-death .
+
+_:node19gakslfox5 rr:column "approximate-death-XSD" ;
+	a rr:ObjectMap ;
+	rr:datatype "http://www.w3.org/2001/XMLSchema#date" ;
+	km-dev:isPartOfMapping _:node19gakslfox1 .
+
+_:node19gakslfox1 km-dev:hasObjectMap _:node19gakslfox5 .
+
+km-dev:PredicateObjectMap_fa3806e9-d283-4651-ae02-8aad0f42f7f4 rr:objectMap _:node19gakslfox5 .
+
+km-dev:TriplesMap_639f3772-2335-427d-9907-290481548a0f rr:predicateObjectMap km-dev:PredicateObjectMap_fa3806e9-d283-4651-ae02-8aad0f42f7f4 .
+
+km-dev:PredicateObjectMap_fa3806e9-d283-4651-ae02-8aad0f42f7f4 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node19gakslfox1 .
+
+_:node19gakslfox1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_fa3806e9-d283-4651-ae02-8aad0f42f7f4 .
+
+km-dev:PredicateObjectMap_e273e042-c191-420f-99dd-fb0cd20033ec rr:predicate eeboo:precise-birth .
+
+_:node19gakslfox6 rr:column "precise-birth-XSD" ;
+	a rr:ObjectMap ;
+	rr:datatype "http://www.w3.org/2001/XMLSchema#date" ;
+	km-dev:isPartOfMapping _:node19gakslfox1 .
+
+_:node19gakslfox1 km-dev:hasObjectMap _:node19gakslfox6 .
+
+km-dev:PredicateObjectMap_e273e042-c191-420f-99dd-fb0cd20033ec rr:objectMap _:node19gakslfox6 .
+
+km-dev:TriplesMap_639f3772-2335-427d-9907-290481548a0f rr:predicateObjectMap km-dev:PredicateObjectMap_e273e042-c191-420f-99dd-fb0cd20033ec .
+
+km-dev:PredicateObjectMap_e273e042-c191-420f-99dd-fb0cd20033ec a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node19gakslfox1 .
+
+_:node19gakslfox1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_e273e042-c191-420f-99dd-fb0cd20033ec .
+
+km-dev:PredicateObjectMap_52646c6b-8205-40b5-854f-341b32997a94 rr:predicate eeboo:precise-death .
+
+_:node19gakslfox7 rr:column "precise-death-XSD" ;
+	a rr:ObjectMap ;
+	rr:datatype "http://www.w3.org/2001/XMLSchema#date" ;
+	km-dev:isPartOfMapping _:node19gakslfox1 .
+
+_:node19gakslfox1 km-dev:hasObjectMap _:node19gakslfox7 .
+
+km-dev:PredicateObjectMap_52646c6b-8205-40b5-854f-341b32997a94 rr:objectMap _:node19gakslfox7 .
+
+km-dev:TriplesMap_639f3772-2335-427d-9907-290481548a0f rr:predicateObjectMap km-dev:PredicateObjectMap_52646c6b-8205-40b5-854f-341b32997a94 .
+
+km-dev:PredicateObjectMap_52646c6b-8205-40b5-854f-341b32997a94 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node19gakslfox1 .
+
+_:node19gakslfox1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_52646c6b-8205-40b5-854f-341b32997a94 .
+
+km-dev:PredicateObjectMap_d9d7c8c1-40e1-49d3-8743-e18ee9da8cdd rr:predicate eeboo:precise-floruit-end .
+
+_:node19gakslfox8 rr:column "precise-floruit-to-XSD" ;
+	a rr:ObjectMap ;
+	rr:datatype "http://www.w3.org/2001/XMLSchema#date" ;
+	km-dev:isPartOfMapping _:node19gakslfox1 .
+
+_:node19gakslfox1 km-dev:hasObjectMap _:node19gakslfox8 .
+
+km-dev:PredicateObjectMap_d9d7c8c1-40e1-49d3-8743-e18ee9da8cdd rr:objectMap _:node19gakslfox8 .
+
+km-dev:TriplesMap_639f3772-2335-427d-9907-290481548a0f rr:predicateObjectMap km-dev:PredicateObjectMap_d9d7c8c1-40e1-49d3-8743-e18ee9da8cdd .
+
+km-dev:PredicateObjectMap_d9d7c8c1-40e1-49d3-8743-e18ee9da8cdd a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node19gakslfox1 .
+
+_:node19gakslfox1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_d9d7c8c1-40e1-49d3-8743-e18ee9da8cdd .
+
+km-dev:PredicateObjectMap_2c716614-dae7-4931-a8cb-893309af27b1 rr:predicate eeboo:precise-floruit-start .
+
+_:node19gakslfox9 rr:column "precise-floruit-from-XSD" ;
+	a rr:ObjectMap ;
+	rr:datatype "http://www.w3.org/2001/XMLSchema#date" ;
+	km-dev:isPartOfMapping _:node19gakslfox1 .
+
+_:node19gakslfox1 km-dev:hasObjectMap _:node19gakslfox9 .
+
+km-dev:PredicateObjectMap_2c716614-dae7-4931-a8cb-893309af27b1 rr:objectMap _:node19gakslfox9 .
+
+km-dev:TriplesMap_639f3772-2335-427d-9907-290481548a0f rr:predicateObjectMap km-dev:PredicateObjectMap_2c716614-dae7-4931-a8cb-893309af27b1 .
+
+km-dev:PredicateObjectMap_2c716614-dae7-4931-a8cb-893309af27b1 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node19gakslfox1 .
+
+_:node19gakslfox1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_2c716614-dae7-4931-a8cb-893309af27b1 .

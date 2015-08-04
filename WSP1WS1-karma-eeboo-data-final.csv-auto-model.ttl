@@ -1,0 +1,1428 @@
+@prefix mads: <http://www.loc.gov/mads/rdf/v1#> .
+@prefix dc11: <http://purl.org/dc/elements/1.1/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix bf: <http://bibframe.org/vocab/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix karma: <http://isi.edu/integration/karma/ontologies/model/current#> .
+@prefix mods: <http://www.loc.gov/mods/v3#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix eeboo: <http://eeboo.oerc.ox.ac.uk/eeboo/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix km-dev: <http://isi.edu/integration/karma/dev#> .
+
+_:node19h7u1ai1x1 a km-dev:R2RMLMapping ;
+	km-dev:sourceName "KARMA_eeboo_data_final.csv" ;
+	km-dev:modelPublicationTime "1427269265985"^^xsd:long ;
+	km-dev:modelVersion "1.7" ;
+	km-dev:hasModelLabel "KARMA_eeboo_data_final.csv" ;
+	km-dev:hasBaseURI "http://eeboo.oerc.ox.ac.uk/eeboo/" ;
+	km-dev:hasWorksheetHistory """[
+    {
+        \"commandName\": \"SetWorksheetPropertiesCommand\",
+        \"inputParameters\": [
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"properties\",
+                \"type\": \"other\",
+                \"value\": {
+                    \"graphLabel\": \"\",
+                    \"hasBaseURI\": true,
+                    \"baseURI\": \"http://eeboo.oerc.ox.ac.uk/eeboo/\",
+                    \"hasPrefix\": false,
+                    \"hasServiceProperties\": false
+                }
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            }
+        ],
+        \"tags\": [\"Modeling\"]
+    },
+    {
+        \"commandName\": \"SetMetaPropertyCommand\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"Work_uri\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"metaPropertyName\",
+                \"type\": \"other\",
+                \"value\": \"isUriOfClass\"
+            },
+            {
+                \"name\": \"metaPropertyUri\",
+                \"type\": \"other\",
+                \"value\": \"http://eeboo.oerc.ox.ac.uk/eeboo/Work\"
+            },
+            {
+                \"name\": \"metaPropertyId\",
+                \"type\": \"other\",
+                \"value\": \"http://eeboo.oerc.ox.ac.uk/eeboo/Work1 (add)\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://eeboo.oerc.ox.ac.uk/eeboo/Work\",
+                    \"DomainId\": \"http://eeboo.oerc.ox.ac.uk/eeboo/Work1\",
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://isi.edu/integration/karma/dev#classLink\",
+                    \"DomainLabel\": \"eeboo:Work1 (add)\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": false
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Work_uri\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Work_uri\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"Modeling\"]
+    },
+    {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"title0\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://www.loc.gov/mads/rdf/v1#Title\",
+                    \"DomainId\": \"http://www.loc.gov/mads/rdf/v1#Title1\",
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://www.w3.org/2000/01/rdf-schema#label\",
+                    \"DomainLabel\": \"madsrdf:Title1 (add)\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": false
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"title0\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"title0\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"Modeling\"]
+    },
+    {
+        \"commandName\": \"ChangeInternalNodeLinksCommand\",
+        \"inputParameters\": [
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"initialEdges\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"edgeTargetId\": \"http://www.loc.gov/mads/rdf/v1#Title1\",
+                    \"edgeId\": \"http://www.loc.gov/mods/rdf/v1#titlePrincipal\",
+                    \"edgeSourceId\": \"http://www.loc.gov/mods/rdf/v1#ModsResource1\"
+                }]
+            },
+            {
+                \"name\": \"alignmentId\",
+                \"type\": \"other\",
+                \"value\": \"WSP1:WS1AL\"
+            },
+            {
+                \"name\": \"newEdges\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"edgeTargetId\": \"http://www.loc.gov/mads/rdf/v1#Title1\",
+                    \"edgeId\": \"http://www.loc.gov/mods/rdf/v1#titlePrincipal\",
+                    \"edgeTargetUri\": \"http://www.loc.gov/mads/rdf/v1#Title1\",
+                    \"edgeSourceId\": \"http://eeboo.oerc.ox.ac.uk/eeboo/Work1\",
+                    \"edgeSourceUri\": \"http://eeboo.oerc.ox.ac.uk/eeboo/Work\"
+                }]
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            }
+        ],
+        \"tags\": [\"Modeling\"]
+    },
+    {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"approx-date\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://eeboo.oerc.ox.ac.uk/eeboo/Work\",
+                    \"DomainId\": \"http://eeboo.oerc.ox.ac.uk/eeboo/Work1\",
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://eeboo.oerc.ox.ac.uk/eeboo/approx-publication\",
+                    \"DomainLabel\": \"eeboo:Work1\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": false
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"approx-date\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"approx-date\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"Modeling\"]
+    },
+    {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"precise-date\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://eeboo.oerc.ox.ac.uk/eeboo/Work\",
+                    \"DomainId\": \"http://eeboo.oerc.ox.ac.uk/eeboo/Work1\",
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://eeboo.oerc.ox.ac.uk/eeboo/precise-publication\",
+                    \"DomainLabel\": \"eeboo:Work1\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": false
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"precise-date\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"precise-date\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"Modeling\"]
+    },
+    {
+        \"commandName\": \"SetMetaPropertyCommand\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"pubplace_uri\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"metaPropertyName\",
+                \"type\": \"other\",
+                \"value\": \"isUriOfClass\"
+            },
+            {
+                \"name\": \"metaPropertyUri\",
+                \"type\": \"other\",
+                \"value\": \"http://www.loc.gov/mads/rdf/v1#Geographic\"
+            },
+            {
+                \"name\": \"metaPropertyId\",
+                \"type\": \"other\",
+                \"value\": \"http://www.loc.gov/mads/rdf/v1#Geographic1 (add)\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://www.loc.gov/mads/rdf/v1#Geographic\",
+                    \"DomainId\": \"http://www.loc.gov/mads/rdf/v1#Geographic1\",
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://isi.edu/integration/karma/dev#classLink\",
+                    \"DomainLabel\": \"madsrdf:Geographic1 (add)\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": false
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"pubplace_uri\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"pubplace_uri\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"Modeling\"]
+    },
+    {
+        \"commandName\": \"ChangeInternalNodeLinksCommand\",
+        \"inputParameters\": [
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"initialEdges\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"edgeTargetId\": \"http://www.loc.gov/mads/rdf/v1#Geographic1\",
+                    \"edgeId\": \"http://www.loc.gov/mods/rdf/v1#subjectGeographicCode\",
+                    \"edgeSourceId\": \"http://www.loc.gov/mods/rdf/v1#ModsResource1\"
+                }]
+            },
+            {
+                \"name\": \"alignmentId\",
+                \"type\": \"other\",
+                \"value\": \"WSP1:WS1AL\"
+            },
+            {
+                \"name\": \"newEdges\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"edgeTargetId\": \"http://www.loc.gov/mads/rdf/v1#Geographic1\",
+                    \"edgeId\": \"http://www.loc.gov/mods/rdf/v1#placeOfOrigin\",
+                    \"edgeTargetUri\": \"http://www.loc.gov/mads/rdf/v1#Geographic1\",
+                    \"edgeSourceId\": \"http://eeboo.oerc.ox.ac.uk/eeboo/Work1\",
+                    \"edgeSourceUri\": \"http://eeboo.oerc.ox.ac.uk/eeboo/Work\"
+                }]
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            }
+        ],
+        \"tags\": [\"Modeling\"]
+    },
+    {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"pubplace\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://eeboo.oerc.ox.ac.uk/eeboo/Work\",
+                    \"DomainId\": \"http://eeboo.oerc.ox.ac.uk/eeboo/Work1\",
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://eeboo.oerc.ox.ac.uk/eeboo/raw_pubplace\",
+                    \"DomainLabel\": \"eeboo:Work1\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": false
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"pubplace\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"pubplace\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"Modeling\"]
+    },
+    {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"idno0\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://www.loc.gov/mods/rdf/v1#IdentifierGroup\",
+                    \"DomainId\": \"http://www.loc.gov/mods/rdf/v1#IdentifierGroup1\",
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://www.w3.org/2000/01/rdf-schema#label\",
+                    \"DomainLabel\": \"http://www.loc.gov/mods/rdf/v1#IdentifierGroup/IdentifierGroup1 (add)\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": false
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"idno0\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"idno0\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"Modeling\"]
+    },
+    {
+        \"commandName\": \"ChangeInternalNodeLinksCommand\",
+        \"inputParameters\": [
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"initialEdges\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"edgeTargetId\": \"http://www.loc.gov/mods/rdf/v1#IdentifierGroup1\",
+                    \"edgeId\": \"http://www.loc.gov/mods/rdf/v1#identifierGroup\",
+                    \"edgeSourceId\": \"http://www.loc.gov/mods/rdf/v1#ModsResource1\"
+                }]
+            },
+            {
+                \"name\": \"alignmentId\",
+                \"type\": \"other\",
+                \"value\": \"WSP1:WS1AL\"
+            },
+            {
+                \"name\": \"newEdges\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"edgeTargetId\": \"http://www.loc.gov/mods/rdf/v1#IdentifierGroup1\",
+                    \"edgeId\": \"http://www.loc.gov/mods/rdf/v1#identifierGroup\",
+                    \"edgeTargetUri\": \"http://www.loc.gov/mods/rdf/v1#IdentifierGroup1\",
+                    \"edgeSourceId\": \"http://eeboo.oerc.ox.ac.uk/eeboo/Work1\",
+                    \"edgeSourceUri\": \"http://eeboo.oerc.ox.ac.uk/eeboo/Work\"
+                }]
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            }
+        ],
+        \"tags\": [\"Modeling\"]
+    },
+    {
+        \"commandName\": \"SetMetaPropertyCommand\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"FullNameElement_URI\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"metaPropertyName\",
+                \"type\": \"other\",
+                \"value\": \"isUriOfClass\"
+            },
+            {
+                \"name\": \"metaPropertyUri\",
+                \"type\": \"other\",
+                \"value\": \"http://eeboo.oerc.ox.ac.uk/eeboo/Person\"
+            },
+            {
+                \"name\": \"metaPropertyId\",
+                \"type\": \"other\",
+                \"value\": \"http://eeboo.oerc.ox.ac.uk/eeboo/Person1 (add)\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://eeboo.oerc.ox.ac.uk/eeboo/Person\",
+                    \"DomainId\": \"http://eeboo.oerc.ox.ac.uk/eeboo/Person1\",
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://isi.edu/integration/karma/dev#classLink\",
+                    \"DomainLabel\": \"eeboo:Person1 (add)\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": false
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"FullNameElement_URI\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"FullNameElement_URI\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"Modeling\"]
+    },
+    {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"FullNameElement\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://eeboo.oerc.ox.ac.uk/eeboo/Person\",
+                    \"DomainId\": \"http://eeboo.oerc.ox.ac.uk/eeboo/Person1\",
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://www.w3.org/2000/01/rdf-schema#label\",
+                    \"DomainLabel\": \"eeboo:Person1\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": false
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"FullNameElement\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"FullNameElement\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"Modeling\"]
+    },
+    {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"precise-birth\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://eeboo.oerc.ox.ac.uk/eeboo/Person\",
+                    \"DomainId\": \"http://eeboo.oerc.ox.ac.uk/eeboo/Person1\",
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://eeboo.oerc.ox.ac.uk/eeboo/precise-birth\",
+                    \"DomainLabel\": \"eeboo:Person1\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": false
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"precise-birth\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"precise-birth\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"Modeling\"]
+    },
+    {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"precise-death\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://eeboo.oerc.ox.ac.uk/eeboo/Person\",
+                    \"DomainId\": \"http://eeboo.oerc.ox.ac.uk/eeboo/Person1\",
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://eeboo.oerc.ox.ac.uk/eeboo/precise-death\",
+                    \"DomainLabel\": \"eeboo:Person1\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": false
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"precise-death\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"precise-death\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"Modeling\"]
+    },
+    {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"precise-floruit-from\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://eeboo.oerc.ox.ac.uk/eeboo/Person\",
+                    \"DomainId\": \"http://eeboo.oerc.ox.ac.uk/eeboo/Person1\",
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://eeboo.oerc.ox.ac.uk/eeboo/precise-floruit-start\",
+                    \"DomainLabel\": \"eeboo:Person1\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": false
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"precise-floruit-from\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"precise-floruit-from\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"Modeling\"]
+    },
+    {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"precise-floruit-to\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://eeboo.oerc.ox.ac.uk/eeboo/Person\",
+                    \"DomainId\": \"http://eeboo.oerc.ox.ac.uk/eeboo/Person1\",
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://eeboo.oerc.ox.ac.uk/eeboo/precise-floruit-end\",
+                    \"DomainLabel\": \"eeboo:Person1\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": false
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"precise-floruit-to\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"precise-floruit-to\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"Modeling\"]
+    },
+    {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"approximate-birth\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://eeboo.oerc.ox.ac.uk/eeboo/Person\",
+                    \"DomainId\": \"http://eeboo.oerc.ox.ac.uk/eeboo/Person1\",
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://eeboo.oerc.ox.ac.uk/eeboo/approximate-birth\",
+                    \"DomainLabel\": \"eeboo:Person1\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": false
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"approximate-birth\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"approximate-birth\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"Modeling\"]
+    },
+    {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"approximate-death\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://eeboo.oerc.ox.ac.uk/eeboo/Person\",
+                    \"DomainId\": \"http://eeboo.oerc.ox.ac.uk/eeboo/Person1\",
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://eeboo.oerc.ox.ac.uk/eeboo/approximate-death\",
+                    \"DomainLabel\": \"eeboo:Person1\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": false
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"approximate-death\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"approximate-death\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"Modeling\"]
+    }
+]""" .
+
+km-dev:TriplesMap_9be7e350-5d5e-4945-b017-4704d25120d6 a rr:TriplesMap .
+
+_:node19h7u1ai1x1 km-dev:hasTriplesMap km-dev:TriplesMap_9be7e350-5d5e-4945-b017-4704d25120d6 .
+
+km-dev:TriplesMap_9be7e350-5d5e-4945-b017-4704d25120d6 km-dev:isPartOfMapping _:node19h7u1ai1x1 .
+
+_:node19h7u1ai1x2 rr:tableName "KARMA_eeboo_data_final.csv" ;
+	a rr:LogicalTable ;
+	km-dev:isPartOfMapping _:node19h7u1ai1x1 .
+
+_:node19h7u1ai1x1 km-dev:hasLogicalTable _:node19h7u1ai1x2 .
+
+km-dev:TriplesMap_9be7e350-5d5e-4945-b017-4704d25120d6 rr:logicalTable _:node19h7u1ai1x2 ;
+	rr:subjectMap _:node19h7u1ai1x3 .
+
+_:node19h7u1ai1x1 km-dev:hasSubjectMap _:node19h7u1ai1x3 .
+
+_:node19h7u1ai1x3 km-dev:isPartOfMapping _:node19h7u1ai1x1 ;
+	a rr:SubjectMap ;
+	km-dev:alignmentNodeId "http://eeboo.oerc.ox.ac.uk/eeboo/Person1" ;
+	rr:class eeboo:Person ;
+	rr:template "{FullNameElement_URI}" .
+
+km-dev:PredicateObjectMap_be62fb3c-ec6f-429e-bb95-a674579a09b0 rr:predicate eeboo:approximate-birth .
+
+_:node19h7u1ai1x4 rr:column "approximate-birth" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node19h7u1ai1x1 .
+
+_:node19h7u1ai1x1 km-dev:hasObjectMap _:node19h7u1ai1x4 .
+
+km-dev:PredicateObjectMap_be62fb3c-ec6f-429e-bb95-a674579a09b0 rr:objectMap _:node19h7u1ai1x4 .
+
+km-dev:TriplesMap_9be7e350-5d5e-4945-b017-4704d25120d6 rr:predicateObjectMap km-dev:PredicateObjectMap_be62fb3c-ec6f-429e-bb95-a674579a09b0 .
+
+km-dev:PredicateObjectMap_be62fb3c-ec6f-429e-bb95-a674579a09b0 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node19h7u1ai1x1 .
+
+_:node19h7u1ai1x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_be62fb3c-ec6f-429e-bb95-a674579a09b0 .
+
+km-dev:PredicateObjectMap_81fcf96b-dab8-41f6-a955-771fb6abb6b6 rr:predicate eeboo:approximate-death .
+
+_:node19h7u1ai1x5 rr:column "approximate-death" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node19h7u1ai1x1 .
+
+_:node19h7u1ai1x1 km-dev:hasObjectMap _:node19h7u1ai1x5 .
+
+km-dev:PredicateObjectMap_81fcf96b-dab8-41f6-a955-771fb6abb6b6 rr:objectMap _:node19h7u1ai1x5 .
+
+km-dev:TriplesMap_9be7e350-5d5e-4945-b017-4704d25120d6 rr:predicateObjectMap km-dev:PredicateObjectMap_81fcf96b-dab8-41f6-a955-771fb6abb6b6 .
+
+km-dev:PredicateObjectMap_81fcf96b-dab8-41f6-a955-771fb6abb6b6 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node19h7u1ai1x1 .
+
+_:node19h7u1ai1x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_81fcf96b-dab8-41f6-a955-771fb6abb6b6 .
+
+km-dev:PredicateObjectMap_f6c2629c-72d3-40c5-bb31-c67ee4f90ca1 rr:predicate eeboo:precise-birth .
+
+_:node19h7u1ai1x6 rr:column "precise-birth" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node19h7u1ai1x1 .
+
+_:node19h7u1ai1x1 km-dev:hasObjectMap _:node19h7u1ai1x6 .
+
+km-dev:PredicateObjectMap_f6c2629c-72d3-40c5-bb31-c67ee4f90ca1 rr:objectMap _:node19h7u1ai1x6 .
+
+km-dev:TriplesMap_9be7e350-5d5e-4945-b017-4704d25120d6 rr:predicateObjectMap km-dev:PredicateObjectMap_f6c2629c-72d3-40c5-bb31-c67ee4f90ca1 .
+
+km-dev:PredicateObjectMap_f6c2629c-72d3-40c5-bb31-c67ee4f90ca1 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node19h7u1ai1x1 .
+
+_:node19h7u1ai1x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_f6c2629c-72d3-40c5-bb31-c67ee4f90ca1 .
+
+km-dev:PredicateObjectMap_55100ddd-579f-44b7-98ca-4f5f79e3ffaf rr:predicate eeboo:precise-death .
+
+_:node19h7u1ai1x7 rr:column "precise-death" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node19h7u1ai1x1 .
+
+_:node19h7u1ai1x1 km-dev:hasObjectMap _:node19h7u1ai1x7 .
+
+km-dev:PredicateObjectMap_55100ddd-579f-44b7-98ca-4f5f79e3ffaf rr:objectMap _:node19h7u1ai1x7 .
+
+km-dev:TriplesMap_9be7e350-5d5e-4945-b017-4704d25120d6 rr:predicateObjectMap km-dev:PredicateObjectMap_55100ddd-579f-44b7-98ca-4f5f79e3ffaf .
+
+km-dev:PredicateObjectMap_55100ddd-579f-44b7-98ca-4f5f79e3ffaf a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node19h7u1ai1x1 .
+
+_:node19h7u1ai1x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_55100ddd-579f-44b7-98ca-4f5f79e3ffaf .
+
+km-dev:PredicateObjectMap_bc756455-2bf3-44cb-aa3b-7c49930ae09f rr:predicate eeboo:precise-floruit-end .
+
+_:node19h7u1ai1x8 rr:column "precise-floruit-to" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node19h7u1ai1x1 .
+
+_:node19h7u1ai1x1 km-dev:hasObjectMap _:node19h7u1ai1x8 .
+
+km-dev:PredicateObjectMap_bc756455-2bf3-44cb-aa3b-7c49930ae09f rr:objectMap _:node19h7u1ai1x8 .
+
+km-dev:TriplesMap_9be7e350-5d5e-4945-b017-4704d25120d6 rr:predicateObjectMap km-dev:PredicateObjectMap_bc756455-2bf3-44cb-aa3b-7c49930ae09f .
+
+km-dev:PredicateObjectMap_bc756455-2bf3-44cb-aa3b-7c49930ae09f a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node19h7u1ai1x1 .
+
+_:node19h7u1ai1x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_bc756455-2bf3-44cb-aa3b-7c49930ae09f .
+
+km-dev:PredicateObjectMap_f5884ad5-cfc7-4780-92ae-dabd5d452096 rr:predicate eeboo:precise-floruit-start .
+
+_:node19h7u1ai1x9 rr:column "precise-floruit-from" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node19h7u1ai1x1 .
+
+_:node19h7u1ai1x1 km-dev:hasObjectMap _:node19h7u1ai1x9 .
+
+km-dev:PredicateObjectMap_f5884ad5-cfc7-4780-92ae-dabd5d452096 rr:objectMap _:node19h7u1ai1x9 .
+
+km-dev:TriplesMap_9be7e350-5d5e-4945-b017-4704d25120d6 rr:predicateObjectMap km-dev:PredicateObjectMap_f5884ad5-cfc7-4780-92ae-dabd5d452096 .
+
+km-dev:PredicateObjectMap_f5884ad5-cfc7-4780-92ae-dabd5d452096 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node19h7u1ai1x1 .
+
+_:node19h7u1ai1x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_f5884ad5-cfc7-4780-92ae-dabd5d452096 .
+
+km-dev:PredicateObjectMap_77cf047c-e30d-42ca-a3e4-36c7f3d15862 rr:predicate rdfs:label .
+
+_:node19h7u1ai1x10 rr:column "FullNameElement" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node19h7u1ai1x1 .
+
+_:node19h7u1ai1x1 km-dev:hasObjectMap _:node19h7u1ai1x10 .
+
+km-dev:PredicateObjectMap_77cf047c-e30d-42ca-a3e4-36c7f3d15862 rr:objectMap _:node19h7u1ai1x10 .
+
+km-dev:TriplesMap_9be7e350-5d5e-4945-b017-4704d25120d6 rr:predicateObjectMap km-dev:PredicateObjectMap_77cf047c-e30d-42ca-a3e4-36c7f3d15862 .
+
+km-dev:PredicateObjectMap_77cf047c-e30d-42ca-a3e4-36c7f3d15862 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node19h7u1ai1x1 .
+
+_:node19h7u1ai1x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_77cf047c-e30d-42ca-a3e4-36c7f3d15862 .
+
+km-dev:TriplesMap_b56f3b2c-32c5-4174-8359-aa10b785941b a rr:TriplesMap .
+
+_:node19h7u1ai1x1 km-dev:hasTriplesMap km-dev:TriplesMap_b56f3b2c-32c5-4174-8359-aa10b785941b .
+
+km-dev:TriplesMap_b56f3b2c-32c5-4174-8359-aa10b785941b km-dev:isPartOfMapping _:node19h7u1ai1x1 .
+
+_:node19h7u1ai1x11 rr:tableName "KARMA_eeboo_data_final.csv" ;
+	a rr:LogicalTable ;
+	km-dev:isPartOfMapping _:node19h7u1ai1x1 .
+
+_:node19h7u1ai1x1 km-dev:hasLogicalTable _:node19h7u1ai1x11 .
+
+km-dev:TriplesMap_b56f3b2c-32c5-4174-8359-aa10b785941b rr:logicalTable _:node19h7u1ai1x11 ;
+	rr:subjectMap _:node19h7u1ai1x12 .
+
+_:node19h7u1ai1x1 km-dev:hasSubjectMap _:node19h7u1ai1x12 .
+
+_:node19h7u1ai1x12 km-dev:isPartOfMapping _:node19h7u1ai1x1 ;
+	a rr:SubjectMap ;
+	km-dev:alignmentNodeId "http://eeboo.oerc.ox.ac.uk/eeboo/Work1" ;
+	rr:class eeboo:Work ;
+	rr:template "{Work_uri}" ;
+	a km-dev:steinerTreeRootNode .
+
+km-dev:PredicateObjectMap_6c05f486-985d-4564-92f2-2037995017f7 rr:predicate eeboo:approx-publication .
+
+_:node19h7u1ai1x13 rr:column "approx-date" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node19h7u1ai1x1 .
+
+_:node19h7u1ai1x1 km-dev:hasObjectMap _:node19h7u1ai1x13 .
+
+km-dev:PredicateObjectMap_6c05f486-985d-4564-92f2-2037995017f7 rr:objectMap _:node19h7u1ai1x13 .
+
+km-dev:TriplesMap_b56f3b2c-32c5-4174-8359-aa10b785941b rr:predicateObjectMap km-dev:PredicateObjectMap_6c05f486-985d-4564-92f2-2037995017f7 .
+
+km-dev:PredicateObjectMap_6c05f486-985d-4564-92f2-2037995017f7 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node19h7u1ai1x1 .
+
+_:node19h7u1ai1x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_6c05f486-985d-4564-92f2-2037995017f7 .
+
+km-dev:PredicateObjectMap_2470a829-f3c7-43d6-afe8-b07df0ccd76d rr:predicate eeboo:creator .
+
+km-dev:RefObjectMap_ebf1ffe9-1d5e-4828-89e0-84b891273764 a rr:RefObjectMap , rr:ObjectMap ;
+	rr:parentTriplesMap km-dev:TriplesMap_9be7e350-5d5e-4945-b017-4704d25120d6 ;
+	km-dev:isPartOfMapping _:node19h7u1ai1x1 .
+
+_:node19h7u1ai1x1 km-dev:hasObjectMap km-dev:RefObjectMap_ebf1ffe9-1d5e-4828-89e0-84b891273764 .
+
+km-dev:PredicateObjectMap_2470a829-f3c7-43d6-afe8-b07df0ccd76d rr:objectMap km-dev:RefObjectMap_ebf1ffe9-1d5e-4828-89e0-84b891273764 .
+
+km-dev:TriplesMap_b56f3b2c-32c5-4174-8359-aa10b785941b rr:predicateObjectMap km-dev:PredicateObjectMap_2470a829-f3c7-43d6-afe8-b07df0ccd76d .
+
+km-dev:PredicateObjectMap_2470a829-f3c7-43d6-afe8-b07df0ccd76d a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node19h7u1ai1x1 .
+
+_:node19h7u1ai1x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_2470a829-f3c7-43d6-afe8-b07df0ccd76d .
+
+km-dev:PredicateObjectMap_1c99f244-f4ef-4ed8-8193-bb29a01a6063 rr:predicate eeboo:precise-publication .
+
+_:node19h7u1ai1x14 rr:column "precise-date" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node19h7u1ai1x1 .
+
+_:node19h7u1ai1x1 km-dev:hasObjectMap _:node19h7u1ai1x14 .
+
+km-dev:PredicateObjectMap_1c99f244-f4ef-4ed8-8193-bb29a01a6063 rr:objectMap _:node19h7u1ai1x14 .
+
+km-dev:TriplesMap_b56f3b2c-32c5-4174-8359-aa10b785941b rr:predicateObjectMap km-dev:PredicateObjectMap_1c99f244-f4ef-4ed8-8193-bb29a01a6063 .
+
+km-dev:PredicateObjectMap_1c99f244-f4ef-4ed8-8193-bb29a01a6063 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node19h7u1ai1x1 .
+
+_:node19h7u1ai1x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_1c99f244-f4ef-4ed8-8193-bb29a01a6063 .
+
+km-dev:PredicateObjectMap_eb5fd5b8-5ca4-4e0b-8a7f-3739f09203ee rr:predicate eeboo:raw_pubplace .
+
+_:node19h7u1ai1x15 rr:column "pubplace" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node19h7u1ai1x1 .
+
+_:node19h7u1ai1x1 km-dev:hasObjectMap _:node19h7u1ai1x15 .
+
+km-dev:PredicateObjectMap_eb5fd5b8-5ca4-4e0b-8a7f-3739f09203ee rr:objectMap _:node19h7u1ai1x15 .
+
+km-dev:TriplesMap_b56f3b2c-32c5-4174-8359-aa10b785941b rr:predicateObjectMap km-dev:PredicateObjectMap_eb5fd5b8-5ca4-4e0b-8a7f-3739f09203ee .
+
+km-dev:PredicateObjectMap_eb5fd5b8-5ca4-4e0b-8a7f-3739f09203ee a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node19h7u1ai1x1 .
+
+_:node19h7u1ai1x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_eb5fd5b8-5ca4-4e0b-8a7f-3739f09203ee .
+
+km-dev:PredicateObjectMap_7fad0518-733e-451a-8094-61daedb3171d rr:predicate <http://www.loc.gov/mods/rdf/v1#identifierGroup> .
+
+km-dev:RefObjectMap_d5241ce5-35b8-4f25-8f34-6451d3ad87e0 a rr:RefObjectMap , rr:ObjectMap ;
+	rr:parentTriplesMap km-dev:TriplesMap_d31abca4-82b6-4b25-a23b-87b952feaf4c ;
+	km-dev:isPartOfMapping _:node19h7u1ai1x1 .
+
+_:node19h7u1ai1x1 km-dev:hasObjectMap km-dev:RefObjectMap_d5241ce5-35b8-4f25-8f34-6451d3ad87e0 .
+
+km-dev:PredicateObjectMap_7fad0518-733e-451a-8094-61daedb3171d rr:objectMap km-dev:RefObjectMap_d5241ce5-35b8-4f25-8f34-6451d3ad87e0 .
+
+km-dev:TriplesMap_b56f3b2c-32c5-4174-8359-aa10b785941b rr:predicateObjectMap km-dev:PredicateObjectMap_7fad0518-733e-451a-8094-61daedb3171d .
+
+km-dev:PredicateObjectMap_7fad0518-733e-451a-8094-61daedb3171d a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node19h7u1ai1x1 .
+
+_:node19h7u1ai1x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_7fad0518-733e-451a-8094-61daedb3171d .
+
+km-dev:PredicateObjectMap_d0cc272f-9cba-4c53-91c5-31231eac847b rr:predicate <http://www.loc.gov/mods/rdf/v1#placeOfOrigin> .
+
+km-dev:RefObjectMap_218584ec-1c14-451d-8804-8fc428f7abf8 a rr:RefObjectMap , rr:ObjectMap ;
+	rr:parentTriplesMap km-dev:TriplesMap_86fd3bcf-2185-4512-9d02-23859b451793 ;
+	km-dev:isPartOfMapping _:node19h7u1ai1x1 .
+
+_:node19h7u1ai1x1 km-dev:hasObjectMap km-dev:RefObjectMap_218584ec-1c14-451d-8804-8fc428f7abf8 .
+
+km-dev:PredicateObjectMap_d0cc272f-9cba-4c53-91c5-31231eac847b rr:objectMap km-dev:RefObjectMap_218584ec-1c14-451d-8804-8fc428f7abf8 .
+
+km-dev:TriplesMap_b56f3b2c-32c5-4174-8359-aa10b785941b rr:predicateObjectMap km-dev:PredicateObjectMap_d0cc272f-9cba-4c53-91c5-31231eac847b .
+
+km-dev:PredicateObjectMap_d0cc272f-9cba-4c53-91c5-31231eac847b a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node19h7u1ai1x1 .
+
+_:node19h7u1ai1x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_d0cc272f-9cba-4c53-91c5-31231eac847b .
+
+km-dev:PredicateObjectMap_b55b70ce-1445-4dc9-9930-4b137ba92275 rr:predicate <http://www.loc.gov/mods/rdf/v1#titlePrincipal> .
+
+km-dev:RefObjectMap_e42d0b86-e133-44fe-aeb5-b7e7515fb900 a rr:RefObjectMap , rr:ObjectMap ;
+	rr:parentTriplesMap km-dev:TriplesMap_89b6003c-24b8-460c-b662-dabb76d3797e ;
+	km-dev:isPartOfMapping _:node19h7u1ai1x1 .
+
+_:node19h7u1ai1x1 km-dev:hasObjectMap km-dev:RefObjectMap_e42d0b86-e133-44fe-aeb5-b7e7515fb900 .
+
+km-dev:PredicateObjectMap_b55b70ce-1445-4dc9-9930-4b137ba92275 rr:objectMap km-dev:RefObjectMap_e42d0b86-e133-44fe-aeb5-b7e7515fb900 .
+
+km-dev:TriplesMap_b56f3b2c-32c5-4174-8359-aa10b785941b rr:predicateObjectMap km-dev:PredicateObjectMap_b55b70ce-1445-4dc9-9930-4b137ba92275 .
+
+km-dev:PredicateObjectMap_b55b70ce-1445-4dc9-9930-4b137ba92275 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node19h7u1ai1x1 .
+
+_:node19h7u1ai1x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_b55b70ce-1445-4dc9-9930-4b137ba92275 .
+
+km-dev:TriplesMap_d31abca4-82b6-4b25-a23b-87b952feaf4c a rr:TriplesMap .
+
+_:node19h7u1ai1x1 km-dev:hasTriplesMap km-dev:TriplesMap_d31abca4-82b6-4b25-a23b-87b952feaf4c .
+
+km-dev:TriplesMap_d31abca4-82b6-4b25-a23b-87b952feaf4c km-dev:isPartOfMapping _:node19h7u1ai1x1 .
+
+_:node19h7u1ai1x16 rr:tableName "KARMA_eeboo_data_final.csv" ;
+	a rr:LogicalTable ;
+	km-dev:isPartOfMapping _:node19h7u1ai1x1 .
+
+_:node19h7u1ai1x1 km-dev:hasLogicalTable _:node19h7u1ai1x16 .
+
+km-dev:TriplesMap_d31abca4-82b6-4b25-a23b-87b952feaf4c rr:logicalTable _:node19h7u1ai1x16 ;
+	rr:subjectMap _:node19h7u1ai1x17 .
+
+_:node19h7u1ai1x1 km-dev:hasSubjectMap _:node19h7u1ai1x17 .
+
+_:node19h7u1ai1x17 km-dev:isPartOfMapping _:node19h7u1ai1x1 ;
+	a rr:SubjectMap ;
+	km-dev:alignmentNodeId "http://www.loc.gov/mods/rdf/v1#IdentifierGroup1" ;
+	rr:class <http://www.loc.gov/mods/rdf/v1#IdentifierGroup> ;
+	rr:termType rr:BlankNode ;
+	km-dev:namePrefix "IdentifierGroup1" .
+
+km-dev:PredicateObjectMap_224e2ad3-a87c-4173-af29-2ca364c26531 rr:predicate rdfs:label .
+
+_:node19h7u1ai1x18 rr:column "idno0" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node19h7u1ai1x1 .
+
+_:node19h7u1ai1x1 km-dev:hasObjectMap _:node19h7u1ai1x18 .
+
+km-dev:PredicateObjectMap_224e2ad3-a87c-4173-af29-2ca364c26531 rr:objectMap _:node19h7u1ai1x18 .
+
+km-dev:TriplesMap_d31abca4-82b6-4b25-a23b-87b952feaf4c rr:predicateObjectMap km-dev:PredicateObjectMap_224e2ad3-a87c-4173-af29-2ca364c26531 .
+
+km-dev:PredicateObjectMap_224e2ad3-a87c-4173-af29-2ca364c26531 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node19h7u1ai1x1 .
+
+_:node19h7u1ai1x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_224e2ad3-a87c-4173-af29-2ca364c26531 .
+
+km-dev:TriplesMap_86fd3bcf-2185-4512-9d02-23859b451793 a rr:TriplesMap .
+
+_:node19h7u1ai1x1 km-dev:hasTriplesMap km-dev:TriplesMap_86fd3bcf-2185-4512-9d02-23859b451793 .
+
+km-dev:TriplesMap_86fd3bcf-2185-4512-9d02-23859b451793 km-dev:isPartOfMapping _:node19h7u1ai1x1 .
+
+_:node19h7u1ai1x19 rr:tableName "KARMA_eeboo_data_final.csv" ;
+	a rr:LogicalTable ;
+	km-dev:isPartOfMapping _:node19h7u1ai1x1 .
+
+_:node19h7u1ai1x1 km-dev:hasLogicalTable _:node19h7u1ai1x19 .
+
+km-dev:TriplesMap_86fd3bcf-2185-4512-9d02-23859b451793 rr:logicalTable _:node19h7u1ai1x19 ;
+	rr:subjectMap _:node19h7u1ai1x20 .
+
+_:node19h7u1ai1x1 km-dev:hasSubjectMap _:node19h7u1ai1x20 .
+
+_:node19h7u1ai1x20 km-dev:isPartOfMapping _:node19h7u1ai1x1 ;
+	a rr:SubjectMap ;
+	km-dev:alignmentNodeId "http://www.loc.gov/mads/rdf/v1#Geographic1" ;
+	rr:class mads:Geographic ;
+	rr:template "{pubplace_uri}" .
+
+km-dev:TriplesMap_89b6003c-24b8-460c-b662-dabb76d3797e a rr:TriplesMap .
+
+_:node19h7u1ai1x1 km-dev:hasTriplesMap km-dev:TriplesMap_89b6003c-24b8-460c-b662-dabb76d3797e .
+
+km-dev:TriplesMap_89b6003c-24b8-460c-b662-dabb76d3797e km-dev:isPartOfMapping _:node19h7u1ai1x1 .
+
+_:node19h7u1ai1x21 rr:tableName "KARMA_eeboo_data_final.csv" ;
+	a rr:LogicalTable ;
+	km-dev:isPartOfMapping _:node19h7u1ai1x1 .
+
+_:node19h7u1ai1x1 km-dev:hasLogicalTable _:node19h7u1ai1x21 .
+
+km-dev:TriplesMap_89b6003c-24b8-460c-b662-dabb76d3797e rr:logicalTable _:node19h7u1ai1x21 ;
+	rr:subjectMap _:node19h7u1ai1x22 .
+
+_:node19h7u1ai1x1 km-dev:hasSubjectMap _:node19h7u1ai1x22 .
+
+_:node19h7u1ai1x22 km-dev:isPartOfMapping _:node19h7u1ai1x1 ;
+	a rr:SubjectMap ;
+	km-dev:alignmentNodeId "http://www.loc.gov/mads/rdf/v1#Title1" ;
+	rr:class mads:Title ;
+	rr:termType rr:BlankNode ;
+	km-dev:namePrefix "madsrdf:Title1" .
+
+km-dev:PredicateObjectMap_23c75325-a318-4eac-8026-304e921d4d3f rr:predicate rdfs:label .
+
+_:node19h7u1ai1x23 rr:column "title0" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node19h7u1ai1x1 .
+
+_:node19h7u1ai1x1 km-dev:hasObjectMap _:node19h7u1ai1x23 .
+
+km-dev:PredicateObjectMap_23c75325-a318-4eac-8026-304e921d4d3f rr:objectMap _:node19h7u1ai1x23 .
+
+km-dev:TriplesMap_89b6003c-24b8-460c-b662-dabb76d3797e rr:predicateObjectMap km-dev:PredicateObjectMap_23c75325-a318-4eac-8026-304e921d4d3f .
+
+km-dev:PredicateObjectMap_23c75325-a318-4eac-8026-304e921d4d3f a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node19h7u1ai1x1 .
+
+_:node19h7u1ai1x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_23c75325-a318-4eac-8026-304e921d4d3f .

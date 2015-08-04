@@ -1,0 +1,399 @@
+@prefix mads: <http://www.loc.gov/mads/rdf/v1#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix bf: <http://bibframe.org/vocab/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix karma: <http://isi.edu/integration/karma/ontologies/model/current#> .
+@prefix mods: <http://www.loc.gov/mods/v3#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix eeboo: <http://eeboo.oerc.ox.ac.uk/eeboo/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix km-dev: <http://isi.edu/integration/karma/dev#> .
+
+_:node19h354pbmx1 a km-dev:R2RMLMapping ;
+	km-dev:sourceName "eebo_person_VIAF_LC_LINKS.csv" ;
+	km-dev:modelPublicationTime "1427108947318"^^xsd:long ;
+	km-dev:modelVersion "1.7" ;
+	km-dev:hasModelLabel "eebo_person_VIAF_LC_LINKS.csv" ;
+	km-dev:hasBaseURI "http://eeboo.oerc.ox.ac.uk/eeboo/" ;
+	km-dev:hasWorksheetHistory """[
+    {
+        \"commandName\": \"SetMetaPropertyCommand\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"Person\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"metaPropertyName\",
+                \"type\": \"other\",
+                \"value\": \"isUriOfClass\"
+            },
+            {
+                \"name\": \"metaPropertyUri\",
+                \"type\": \"other\",
+                \"value\": \"http://eeboo.oerc.ox.ac.uk/eeboo/Person\"
+            },
+            {
+                \"name\": \"metaPropertyId\",
+                \"type\": \"other\",
+                \"value\": \"http://eeboo.oerc.ox.ac.uk/eeboo/Person1 (add)\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://eeboo.oerc.ox.ac.uk/eeboo/Person\",
+                    \"DomainId\": \"http://eeboo.oerc.ox.ac.uk/eeboo/Person1\",
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://isi.edu/integration/karma/dev#classLink\",
+                    \"DomainLabel\": \"eeboo:Person1 (add)\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": false
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Person\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Person\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"Modeling\"]
+    },
+    {
+        \"commandName\": \"SetWorksheetPropertiesCommand\",
+        \"inputParameters\": [
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"properties\",
+                \"type\": \"other\",
+                \"value\": {
+                    \"graphLabel\": \"\",
+                    \"hasBaseURI\": true,
+                    \"baseURI\": \"http://eeboo.oerc.ox.ac.uk/eeboo/\",
+                    \"hasPrefix\": false,
+                    \"hasServiceProperties\": false
+                }
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            }
+        ],
+        \"tags\": [\"Modeling\"]
+    },
+    {
+        \"commandName\": \"SetMetaPropertyCommand\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"VIAF LINK \"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"metaPropertyName\",
+                \"type\": \"other\",
+                \"value\": \"isUriOfClass\"
+            },
+            {
+                \"name\": \"metaPropertyUri\",
+                \"type\": \"other\",
+                \"value\": \"http://eeboo.oerc.ox.ac.uk/eeboo/Person\"
+            },
+            {
+                \"name\": \"metaPropertyId\",
+                \"type\": \"other\",
+                \"value\": \"http://eeboo.oerc.ox.ac.uk/eeboo/Person1\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://eeboo.oerc.ox.ac.uk/eeboo/Person\",
+                    \"DomainId\": \"http://eeboo.oerc.ox.ac.uk/eeboo/Person1\",
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://isi.edu/integration/karma/dev#classLink\",
+                    \"DomainLabel\": \"eeboo:Person1\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": false
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"VIAF LINK \\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"VIAF LINK \\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"Modeling\"]
+    },
+    {
+        \"commandName\": \"ChangeInternalNodeLinksCommand\",
+        \"inputParameters\": [
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"initialEdges\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"edgeTargetId\": \"HN7\",
+                    \"edgeId\": \"http://isi.edu/integration/karma/dev#classLink\",
+                    \"edgeSourceId\": \"http://eeboo.oerc.ox.ac.uk/eeboo/Person1\"
+                }]
+            },
+            {
+                \"name\": \"alignmentId\",
+                \"type\": \"other\",
+                \"value\": \"WSP2:WS2AL\"
+            },
+            {
+                \"name\": \"newEdges\",
+                \"type\": \"other\",
+                \"value\": []
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            }
+        ],
+        \"tags\": [\"Modeling\"]
+    },
+    {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"VIAF LINK \"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://eeboo.oerc.ox.ac.uk/eeboo/Person\",
+                    \"DomainId\": \"http://eeboo.oerc.ox.ac.uk/eeboo/Person1\",
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://eeboo.oerc.ox.ac.uk/eeboo/hasExternalAuthorityVIAF\",
+                    \"DomainLabel\": \"eeboo:Person1\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": false
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"VIAF LINK \\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"VIAF LINK \\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"Modeling\"]
+    },
+    {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"LC Links\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://eeboo.oerc.ox.ac.uk/eeboo/Person\",
+                    \"DomainId\": \"http://eeboo.oerc.ox.ac.uk/eeboo/Person1\",
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://eeboo.oerc.ox.ac.uk/eeboo/hasExternalAuthorityLoC\",
+                    \"DomainLabel\": \"eeboo:Person1\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": false
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"LC Links\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"LC Links\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"Modeling\"]
+    }
+]""" .
+
+km-dev:TriplesMap_ca951e05-5ba3-4962-a90e-bc07f0485f36 a rr:TriplesMap .
+
+_:node19h354pbmx1 km-dev:hasTriplesMap km-dev:TriplesMap_ca951e05-5ba3-4962-a90e-bc07f0485f36 .
+
+km-dev:TriplesMap_ca951e05-5ba3-4962-a90e-bc07f0485f36 km-dev:isPartOfMapping _:node19h354pbmx1 .
+
+_:node19h354pbmx2 rr:tableName "eebo_person_VIAF_LC_LINKS.csv" ;
+	a rr:LogicalTable ;
+	km-dev:isPartOfMapping _:node19h354pbmx1 .
+
+_:node19h354pbmx1 km-dev:hasLogicalTable _:node19h354pbmx2 .
+
+km-dev:TriplesMap_ca951e05-5ba3-4962-a90e-bc07f0485f36 rr:logicalTable _:node19h354pbmx2 ;
+	rr:subjectMap _:node19h354pbmx3 .
+
+_:node19h354pbmx1 km-dev:hasSubjectMap _:node19h354pbmx3 .
+
+_:node19h354pbmx3 km-dev:isPartOfMapping _:node19h354pbmx1 ;
+	a rr:SubjectMap ;
+	km-dev:alignmentNodeId "http://eeboo.oerc.ox.ac.uk/eeboo/Person1" ;
+	rr:class eeboo:Person ;
+	rr:template "{Person}" ;
+	a km-dev:steinerTreeRootNode .
+
+km-dev:PredicateObjectMap_6a43f237-fdc1-4ef9-b0b2-6f0eec679e3f rr:predicate eeboo:hasExternalAuthorityLoC .
+
+_:node19h354pbmx4 rr:column "LC Links" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node19h354pbmx1 .
+
+_:node19h354pbmx1 km-dev:hasObjectMap _:node19h354pbmx4 .
+
+km-dev:PredicateObjectMap_6a43f237-fdc1-4ef9-b0b2-6f0eec679e3f rr:objectMap _:node19h354pbmx4 .
+
+km-dev:TriplesMap_ca951e05-5ba3-4962-a90e-bc07f0485f36 rr:predicateObjectMap km-dev:PredicateObjectMap_6a43f237-fdc1-4ef9-b0b2-6f0eec679e3f .
+
+km-dev:PredicateObjectMap_6a43f237-fdc1-4ef9-b0b2-6f0eec679e3f a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node19h354pbmx1 .
+
+_:node19h354pbmx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_6a43f237-fdc1-4ef9-b0b2-6f0eec679e3f .
+
+km-dev:PredicateObjectMap_b6dffcc2-b2a3-40e4-8b4e-1684b71e8bb5 rr:predicate eeboo:hasExternalAuthorityVIAF .
+
+_:node19h354pbmx5 rr:column "VIAF LINK " ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node19h354pbmx1 .
+
+_:node19h354pbmx1 km-dev:hasObjectMap _:node19h354pbmx5 .
+
+km-dev:PredicateObjectMap_b6dffcc2-b2a3-40e4-8b4e-1684b71e8bb5 rr:objectMap _:node19h354pbmx5 .
+
+km-dev:TriplesMap_ca951e05-5ba3-4962-a90e-bc07f0485f36 rr:predicateObjectMap km-dev:PredicateObjectMap_b6dffcc2-b2a3-40e4-8b4e-1684b71e8bb5 .
+
+km-dev:PredicateObjectMap_b6dffcc2-b2a3-40e4-8b4e-1684b71e8bb5 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node19h354pbmx1 .
+
+_:node19h354pbmx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_b6dffcc2-b2a3-40e4-8b4e-1684b71e8bb5 .

@@ -1,0 +1,484 @@
+@prefix dc11: <http://purl.org/dc/elements/1.1/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix madsrdf: <http://www.loc.gov/mads/rdf/v1#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix karma: <http://isi.edu/integration/karma/ontologies/model/current#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix km-dev: <http://isi.edu/integration/karma/dev#> .
+
+_:node19g6h461sx1 a km-dev:R2RMLMapping ;
+	km-dev:sourceName "raw_publication_place_and_imprint.csv" ;
+	km-dev:modelPublicationTime "1426148431932"^^xsd:long ;
+	km-dev:modelVersion "1.7" ;
+	km-dev:hasModelLabel "raw_publication_place_and_imprint.csv" ;
+	km-dev:hasBaseURI "http://eeboo.oerc.ox.ac.uk/eeboo/" ;
+	km-dev:hasWorksheetHistory """[
+    {
+        \"commandName\": \"SetMetaPropertyCommand\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"pubplace_uri\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"metaPropertyName\",
+                \"type\": \"other\",
+                \"value\": \"isUriOfClass\"
+            },
+            {
+                \"name\": \"metaPropertyUri\",
+                \"type\": \"other\",
+                \"value\": \"http://www.loc.gov/mads/rdf/v1#Geographic\"
+            },
+            {
+                \"name\": \"metaPropertyId\",
+                \"type\": \"other\",
+                \"value\": \"http://www.loc.gov/mads/rdf/v1#Geographic1 (add)\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://www.loc.gov/mads/rdf/v1#Geographic\",
+                    \"DomainId\": \"http://www.loc.gov/mads/rdf/v1#Geographic1 (add)\",
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://isi.edu/integration/karma/dev#classLink\",
+                    \"DomainLabel\": \"madsrdf:Geographic1 (add)\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": false
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"pubplace_uri\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"pubplace_uri\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"Modeling\"]
+    },
+    {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"raw_publication_place\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://www.loc.gov/mads/rdf/v1#Geographic\",
+                    \"DomainId\": \"http://www.loc.gov/mads/rdf/v1#Geographic1\",
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://www.w3.org/2000/01/rdf-schema#label\",
+                    \"DomainLabel\": \"madsrdf:Geographic1\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": false
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"raw_publication_place\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"raw_publication_place\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"Modeling\"]
+    },
+    {
+        \"commandName\": \"SetWorksheetPropertiesCommand\",
+        \"inputParameters\": [
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"properties\",
+                \"type\": \"other\",
+                \"value\": {
+                    \"graphLabel\": \"\",
+                    \"hasBaseURI\": true,
+                    \"baseURI\": \"http://eeboo.oerc.ox.ac.uk/eeboo/\",
+                    \"hasPrefix\": false,
+                    \"hasServiceProperties\": false
+                }
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            }
+        ],
+        \"tags\": [\"Modeling\"]
+    },
+    {
+        \"commandName\": \"SetMetaPropertyCommand\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"Work_uri\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"metaPropertyName\",
+                \"type\": \"other\",
+                \"value\": \"isUriOfClass\"
+            },
+            {
+                \"name\": \"metaPropertyUri\",
+                \"type\": \"other\",
+                \"value\": \"http://www.loc.gov/mods/rdf/v1#ModsResource\"
+            },
+            {
+                \"name\": \"metaPropertyId\",
+                \"type\": \"other\",
+                \"value\": \"http://www.loc.gov/mods/rdf/v1#ModsResource1 (add)\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://www.loc.gov/mods/rdf/v1#ModsResource\",
+                    \"DomainId\": \"http://www.loc.gov/mods/rdf/v1#ModsResource1\",
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://isi.edu/integration/karma/dev#classLink\",
+                    \"DomainLabel\": \"http://www.loc.gov/mods/rdf/v1#ModsResource/ModsResource1 (add)\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": false
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Work_uri\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Work_uri\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"Modeling\"]
+    },
+    {
+        \"commandName\": \"ChangeInternalNodeLinksCommand\",
+        \"inputParameters\": [
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"initialEdges\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"edgeTargetId\": \"http://www.loc.gov/mads/rdf/v1#Geographic1\",
+                    \"edgeId\": \"http://www.loc.gov/mods/rdf/v1#subjectGeographicCode\",
+                    \"edgeSourceId\": \"http://www.loc.gov/mods/rdf/v1#ModsResource1\"
+                }]
+            },
+            {
+                \"name\": \"alignmentId\",
+                \"type\": \"other\",
+                \"value\": \"WSP4:WS3AL\"
+            },
+            {
+                \"name\": \"newEdges\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"edgeTargetId\": \"http://www.loc.gov/mads/rdf/v1#Geographic1\",
+                    \"edgeId\": \"http://www.loc.gov/mods/rdf/v1#placeOfOrigin\",
+                    \"edgeTargetUri\": \"http://www.loc.gov/mads/rdf/v1#Geographic\",
+                    \"edgeSourceId\": \"http://www.loc.gov/mods/rdf/v1#ModsResource1\",
+                    \"edgeSourceUri\": \"http://www.loc.gov/mods/rdf/v1#ModsResource\"
+                }]
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            }
+        ],
+        \"tags\": [\"Modeling\"]
+    },
+    {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"publisher\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://www.loc.gov/mads/rdf/v1#Name\",
+                    \"DomainId\": \"http://www.loc.gov/mads/rdf/v1#Name1 (add)\",
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://www.w3.org/2000/01/rdf-schema#label\",
+                    \"DomainLabel\": \"madsrdf:Name1 (add)\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": false
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"publisher\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"publisher\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"Modeling\"]
+    }
+]""" .
+
+km-dev:TriplesMap_326be5c6-56ce-4b33-9aea-753eb1347d7c a rr:TriplesMap .
+
+_:node19g6h461sx1 km-dev:hasTriplesMap km-dev:TriplesMap_326be5c6-56ce-4b33-9aea-753eb1347d7c .
+
+km-dev:TriplesMap_326be5c6-56ce-4b33-9aea-753eb1347d7c km-dev:isPartOfMapping _:node19g6h461sx1 .
+
+_:node19g6h461sx2 rr:tableName "raw_publication_place_and_imprint.csv" ;
+	a rr:LogicalTable ;
+	km-dev:isPartOfMapping _:node19g6h461sx1 .
+
+_:node19g6h461sx1 km-dev:hasLogicalTable _:node19g6h461sx2 .
+
+km-dev:TriplesMap_326be5c6-56ce-4b33-9aea-753eb1347d7c rr:logicalTable _:node19g6h461sx2 ;
+	rr:subjectMap _:node19g6h461sx3 .
+
+_:node19g6h461sx1 km-dev:hasSubjectMap _:node19g6h461sx3 .
+
+_:node19g6h461sx3 km-dev:isPartOfMapping _:node19g6h461sx1 ;
+	a rr:SubjectMap ;
+	km-dev:alignmentNodeId "http://www.loc.gov/mads/rdf/v1#Geographic1" ;
+	rr:class madsrdf:Geographic ;
+	rr:template "{pubplace_uri}" .
+
+km-dev:PredicateObjectMap_3b16f8b9-22d1-46b8-85c7-95d1740f2525 rr:predicate rdfs:label .
+
+_:node19g6h461sx4 rr:column "raw_publication_place" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node19g6h461sx1 .
+
+_:node19g6h461sx1 km-dev:hasObjectMap _:node19g6h461sx4 .
+
+km-dev:PredicateObjectMap_3b16f8b9-22d1-46b8-85c7-95d1740f2525 rr:objectMap _:node19g6h461sx4 .
+
+km-dev:TriplesMap_326be5c6-56ce-4b33-9aea-753eb1347d7c rr:predicateObjectMap km-dev:PredicateObjectMap_3b16f8b9-22d1-46b8-85c7-95d1740f2525 .
+
+km-dev:PredicateObjectMap_3b16f8b9-22d1-46b8-85c7-95d1740f2525 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node19g6h461sx1 .
+
+_:node19g6h461sx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_3b16f8b9-22d1-46b8-85c7-95d1740f2525 .
+
+km-dev:TriplesMap_4a70dff1-a843-44b7-a618-2862406d3be0 a rr:TriplesMap .
+
+_:node19g6h461sx1 km-dev:hasTriplesMap km-dev:TriplesMap_4a70dff1-a843-44b7-a618-2862406d3be0 .
+
+km-dev:TriplesMap_4a70dff1-a843-44b7-a618-2862406d3be0 km-dev:isPartOfMapping _:node19g6h461sx1 .
+
+_:node19g6h461sx5 rr:tableName "raw_publication_place_and_imprint.csv" ;
+	a rr:LogicalTable ;
+	km-dev:isPartOfMapping _:node19g6h461sx1 .
+
+_:node19g6h461sx1 km-dev:hasLogicalTable _:node19g6h461sx5 .
+
+km-dev:TriplesMap_4a70dff1-a843-44b7-a618-2862406d3be0 rr:logicalTable _:node19g6h461sx5 ;
+	rr:subjectMap _:node19g6h461sx6 .
+
+_:node19g6h461sx1 km-dev:hasSubjectMap _:node19g6h461sx6 .
+
+_:node19g6h461sx6 km-dev:isPartOfMapping _:node19g6h461sx1 ;
+	a rr:SubjectMap ;
+	km-dev:alignmentNodeId "http://www.loc.gov/mads/rdf/v1#Name1" ;
+	rr:class madsrdf:Name ;
+	rr:termType rr:BlankNode ;
+	km-dev:namePrefix "madsrdf:Name1" .
+
+km-dev:PredicateObjectMap_6d6ae1c0-5bfa-4052-902b-f2ea7a76f3e8 rr:predicate rdfs:label .
+
+_:node19g6h461sx7 rr:column "publisher" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node19g6h461sx1 .
+
+_:node19g6h461sx1 km-dev:hasObjectMap _:node19g6h461sx7 .
+
+km-dev:PredicateObjectMap_6d6ae1c0-5bfa-4052-902b-f2ea7a76f3e8 rr:objectMap _:node19g6h461sx7 .
+
+km-dev:TriplesMap_4a70dff1-a843-44b7-a618-2862406d3be0 rr:predicateObjectMap km-dev:PredicateObjectMap_6d6ae1c0-5bfa-4052-902b-f2ea7a76f3e8 .
+
+km-dev:PredicateObjectMap_6d6ae1c0-5bfa-4052-902b-f2ea7a76f3e8 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node19g6h461sx1 .
+
+_:node19g6h461sx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_6d6ae1c0-5bfa-4052-902b-f2ea7a76f3e8 .
+
+km-dev:TriplesMap_4dbcca7c-3251-40aa-98ac-9a1c4477e688 a rr:TriplesMap .
+
+_:node19g6h461sx1 km-dev:hasTriplesMap km-dev:TriplesMap_4dbcca7c-3251-40aa-98ac-9a1c4477e688 .
+
+km-dev:TriplesMap_4dbcca7c-3251-40aa-98ac-9a1c4477e688 km-dev:isPartOfMapping _:node19g6h461sx1 .
+
+_:node19g6h461sx8 rr:tableName "raw_publication_place_and_imprint.csv" ;
+	a rr:LogicalTable ;
+	km-dev:isPartOfMapping _:node19g6h461sx1 .
+
+_:node19g6h461sx1 km-dev:hasLogicalTable _:node19g6h461sx8 .
+
+km-dev:TriplesMap_4dbcca7c-3251-40aa-98ac-9a1c4477e688 rr:logicalTable _:node19g6h461sx8 ;
+	rr:subjectMap _:node19g6h461sx9 .
+
+_:node19g6h461sx1 km-dev:hasSubjectMap _:node19g6h461sx9 .
+
+_:node19g6h461sx9 km-dev:isPartOfMapping _:node19g6h461sx1 ;
+	a rr:SubjectMap ;
+	km-dev:alignmentNodeId "http://www.loc.gov/mods/rdf/v1#ModsResource1" ;
+	rr:class <http://www.loc.gov/mods/rdf/v1#ModsResource> ;
+	rr:template "{Work_uri}" ;
+	a km-dev:steinerTreeRootNode .
+
+km-dev:PredicateObjectMap_a77114a3-124f-4568-89f8-00cd4316558a rr:predicate <http://www.loc.gov/mods/rdf/v1#placeOfOrigin> .
+
+km-dev:RefObjectMap_68c70d3f-03e6-48ff-ad2f-1ab396dfdad2 a rr:RefObjectMap , rr:ObjectMap ;
+	rr:parentTriplesMap km-dev:TriplesMap_326be5c6-56ce-4b33-9aea-753eb1347d7c ;
+	km-dev:isPartOfMapping _:node19g6h461sx1 .
+
+_:node19g6h461sx1 km-dev:hasObjectMap km-dev:RefObjectMap_68c70d3f-03e6-48ff-ad2f-1ab396dfdad2 .
+
+km-dev:PredicateObjectMap_a77114a3-124f-4568-89f8-00cd4316558a rr:objectMap km-dev:RefObjectMap_68c70d3f-03e6-48ff-ad2f-1ab396dfdad2 .
+
+km-dev:TriplesMap_4dbcca7c-3251-40aa-98ac-9a1c4477e688 rr:predicateObjectMap km-dev:PredicateObjectMap_a77114a3-124f-4568-89f8-00cd4316558a .
+
+km-dev:PredicateObjectMap_a77114a3-124f-4568-89f8-00cd4316558a a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node19g6h461sx1 .
+
+_:node19g6h461sx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_a77114a3-124f-4568-89f8-00cd4316558a .
+
+km-dev:PredicateObjectMap_b5aab78d-b4ec-417a-a8a4-ca40c490ee5c rr:predicate <http://www.loc.gov/mods/rdf/v1#publisher> .
+
+km-dev:RefObjectMap_100edd50-7b9d-4e22-b04b-2b1e68bac1e7 a rr:RefObjectMap , rr:ObjectMap ;
+	rr:parentTriplesMap km-dev:TriplesMap_4a70dff1-a843-44b7-a618-2862406d3be0 ;
+	km-dev:isPartOfMapping _:node19g6h461sx1 .
+
+_:node19g6h461sx1 km-dev:hasObjectMap km-dev:RefObjectMap_100edd50-7b9d-4e22-b04b-2b1e68bac1e7 .
+
+km-dev:PredicateObjectMap_b5aab78d-b4ec-417a-a8a4-ca40c490ee5c rr:objectMap km-dev:RefObjectMap_100edd50-7b9d-4e22-b04b-2b1e68bac1e7 .
+
+km-dev:TriplesMap_4dbcca7c-3251-40aa-98ac-9a1c4477e688 rr:predicateObjectMap km-dev:PredicateObjectMap_b5aab78d-b4ec-417a-a8a4-ca40c490ee5c .
+
+km-dev:PredicateObjectMap_b5aab78d-b4ec-417a-a8a4-ca40c490ee5c a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node19g6h461sx1 .
+
+_:node19g6h461sx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_b5aab78d-b4ec-417a-a8a4-ca40c490ee5c .
